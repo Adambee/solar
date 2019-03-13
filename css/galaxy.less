@@ -1,28 +1,26 @@
 // 本部分 fork 自 https://codepen.io/yincheng/pen/LpjMzP，感谢开源支持。
 
-body{
+body {
     background: black;
 }
-.galaxy {
-}
 
-.galaxy{
+.galaxy {
     width: 1300px / 2;
-    height: 1300px / 2;   
+    height: 1300px / 2;
     position: relative;
 }
 
-.galaxy div{
+.galaxy div {
     position: absolute;
 }
 
-div[class*=track]{
+div[class*=track] {
     border: 1px solid #555;
     margin-left: -3px / 2;
     margin-top: -3px / 2;
 }
 
-.sun{
+.sun {
     background: url(http://images2015.cnblogs.com/blog/818663/201510/818663-20151013205656257-1729257972.png) 0 0 no-repeat;
     background-size: contain;
     width: 100px / 2;
@@ -31,55 +29,62 @@ div[class*=track]{
     top: 600px / 2;
 }
 
-.mercury{
+.mercury {
     background: url(http://images2015.cnblogs.com/blog/818663/201510/818663-20151013205828679-1300811025.png) 0 0 no-repeat;
     background-size: contain;
     width: 50px / 2;
     height: 50px / 2;
     left: 700px / 2;
     top: 625px / 2;
+    -webkit-transform-origin: -50px / 2 25px / 2;
     transform-origin: -50px / 2 25px / 2;
+    -webkit-animation: rotation 2.4s linear infinite;
     animation: rotation 2.4s linear infinite;
 }
 
-.mercury-track{
+.mercury-track {
     width: 150px / 2;
     height: 150px / 2;
     left: 575px / 2;
-    top: 575px / 2; 
+    top: 575px / 2;
     border-radius: 75px / 2;
 }
 
-.venus{
+.venus {
     background: url(http://images2015.cnblogs.com/blog/818663/201510/818663-20151013205908382-878096313.png) 0 0 no-repeat;
     background-size: contain;
     width: 60px / 2;
     height: 60px / 2;
     left: 750px / 2;
     top: 620px / 2;
+    -webkit-animation: rotation 6.16s linear infinite;
     animation: rotation 6.16s linear infinite;
+    -webkit-transform-origin: -100px / 2 30px / 2;
     transform-origin: -100px / 2 30px / 2;
 }
 
-.venus-track{
+.venus-track {
     width: 260px / 2;
     height: 260px / 2;
     left: 520px / 2;
     top: 520px / 2;
     border-radius: 130px / 2;
 }
-.earth{
+
+.earth {
     background: url(http://images2015.cnblogs.com/blog/818663/201510/818663-20151013205943538-1279197333.png) 0 0 no-repeat;
     background-size: contain;
     width: 60px / 2;
     height: 60px / 2;
     top: 620px / 2;
     left: 805px / 2;
+    -webkit-animation: rotation 10s linear infinite;
     animation: rotation 10s linear infinite;
+    -webkit-transform-origin: -155px / 2 30px / 2;
     transform-origin: -155px / 2 30px / 2;
 }
 
-.earth-track{
+.earth-track {
     width: 370px / 2;
     height: 370px / 2;
     border-radius: 185px / 2;
@@ -87,18 +92,20 @@ div[class*=track]{
     top: 465px / 2;
 }
 
-.mars{
+.mars {
     background: url(http://images2015.cnblogs.com/blog/818663/201510/818663-20151013210013101-347441696.png) 0 0 no-repeat;
     background-size: contain;
     width: 50px / 2;
     height: 50px / 2;
     top: 625px / 2;
     left: 865px / 2;
+    -webkit-animation: rotation 19s linear infinite;
     animation: rotation 19s linear infinite;
+    -webkit-transform-origin: -215px / 2 25px / 2;
     transform-origin: -215px / 2 25px / 2;
 }
 
-.mars-track{
+.mars-track {
     width: 480px / 2;
     height: 480px / 2;
     border-radius: 240px / 2;
@@ -106,18 +113,20 @@ div[class*=track]{
     top: 410px / 2;
 }
 
-.jupiter{
+.jupiter {
     background: url(http://images2015.cnblogs.com/blog/818663/201510/818663-20151013210021944-1129782361.png) 0 0 no-repeat;
     background-size: contain;
     width: 80px / 2;
     height: 80px / 2;
     top: 610px / 2;
     left: 920px / 2;
+    -webkit-animation: rotation 118s linear infinite;
     animation: rotation 118s linear infinite;
+    -webkit-transform-origin: -270px / 2 40px / 2;
     transform-origin: -270px / 2 40px / 2;
 }
 
-.jupiter-track{
+.jupiter-track {
     border-radius: 310px / 2;
     width: 620px / 2;
     height: 620px / 2;
@@ -125,18 +134,20 @@ div[class*=track]{
     top: 340px / 2;
 }
 
-.saturn{
+.saturn {
     background: url(http://images2015.cnblogs.com/blog/818663/201510/818663-20151013210041710-1584827250.png) 0 0 no-repeat;
     background-size: contain;
     width: 120px / 2;
     height: 80px / 2;
     top: 610px / 2;
     left: 1000px / 2;
+    -webkit-animation: rotation 295s linear infinite;
     animation: rotation 295s linear infinite;
+    -webkit-transform-origin: -350px / 2 40px / 2;
     transform-origin: -350px / 2 40px / 2;
 }
 
-.saturn-track{
+.saturn-track {
     border-radius: 410px / 2;
     width: 820px / 2;
     height: 820px / 2;
@@ -144,18 +155,20 @@ div[class*=track]{
     top: 240px / 2;
 }
 
-.uranus{
+.uranus {
     background: url(http://images2015.cnblogs.com/blog/818663/201510/818663-20151013210048304-974518986.png) 0 0 no-repeat;
     background-size: contain;
     width: 80px / 2;
     height: 80px / 2;
     top: 610px / 2;
     left: 1120px / 2;
+    -webkit-animation: rotation 840s linear infinite;
     animation: rotation 840s linear infinite;
+    -webkit-transform-origin: -470px / 2 40px / 2;
     transform-origin: -470px / 2 40px / 2;
 }
 
-.uranus-track{
+.uranus-track {
     border-radius: 510px / 2;
     width: 1020px / 2;
     height: 1020px / 2;
@@ -163,18 +176,20 @@ div[class*=track]{
     left: 140px / 2;
 }
 
-.pluto{
+.pluto {
     background: url(http://images2015.cnblogs.com/blog/818663/201510/818663-20151013210116038-1431613611.png) 0 0 no-repeat;
     background-size: contain;
     width: 70px / 2;
     height: 70px / 2;
     top: 615px / 2;
     left: 1210px / 2;
+    -webkit-animation: rotation 1648s linear infinite;
     animation: rotation 1648s linear infinite;
+    -webkit-transform-origin: -560px / 2 35px / 2;
     transform-origin: -560px / 2 35px / 2;
 }
 
-.pluto-track{
+.pluto-track {
     border-radius: 595px / 2;
     width: 1190px / 2;
     height: 1190px / 2;
@@ -182,8 +197,16 @@ div[class*=track]{
     top: 55px / 2;
 }
 
-@keyframes rotation{
-    to{
+@-webkit-keyframes rotation {
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotation {
+    to {
+        -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
     }
 }

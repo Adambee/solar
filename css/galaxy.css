@@ -29,7 +29,9 @@ div[class*=track] {
   height: 25px;
   left: 350px;
   top: 312.5px;
+  -webkit-transform-origin: -25px 12.5px;
   transform-origin: -25px 12.5px;
+  -webkit-animation: rotation 2.4s linear infinite;
   animation: rotation 2.4s linear infinite;
 }
 .mercury-track {
@@ -46,7 +48,9 @@ div[class*=track] {
   height: 30px;
   left: 375px;
   top: 310px;
+  -webkit-animation: rotation 6.16s linear infinite;
   animation: rotation 6.16s linear infinite;
+  -webkit-transform-origin: -50px 15px;
   transform-origin: -50px 15px;
 }
 .venus-track {
@@ -63,7 +67,9 @@ div[class*=track] {
   height: 30px;
   top: 310px;
   left: 402.5px;
+  -webkit-animation: rotation 10s linear infinite;
   animation: rotation 10s linear infinite;
+  -webkit-transform-origin: -77.5px 15px;
   transform-origin: -77.5px 15px;
 }
 .earth-track {
@@ -80,7 +86,9 @@ div[class*=track] {
   height: 25px;
   top: 312.5px;
   left: 432.5px;
+  -webkit-animation: rotation 19s linear infinite;
   animation: rotation 19s linear infinite;
+  -webkit-transform-origin: -107.5px 12.5px;
   transform-origin: -107.5px 12.5px;
 }
 .mars-track {
@@ -97,7 +105,9 @@ div[class*=track] {
   height: 40px;
   top: 305px;
   left: 460px;
+  -webkit-animation: rotation 118s linear infinite;
   animation: rotation 118s linear infinite;
+  -webkit-transform-origin: -135px 20px;
   transform-origin: -135px 20px;
 }
 .jupiter-track {
@@ -114,7 +124,9 @@ div[class*=track] {
   height: 40px;
   top: 305px;
   left: 500px;
+  -webkit-animation: rotation 295s linear infinite;
   animation: rotation 295s linear infinite;
+  -webkit-transform-origin: -175px 20px;
   transform-origin: -175px 20px;
 }
 .saturn-track {
@@ -131,7 +143,9 @@ div[class*=track] {
   height: 40px;
   top: 305px;
   left: 560px;
+  -webkit-animation: rotation 840s linear infinite;
   animation: rotation 840s linear infinite;
+  -webkit-transform-origin: -235px 20px;
   transform-origin: -235px 20px;
 }
 .uranus-track {
@@ -148,7 +162,9 @@ div[class*=track] {
   height: 35px;
   top: 307.5px;
   left: 605px;
+  -webkit-animation: rotation 1648s linear infinite;
   animation: rotation 1648s linear infinite;
+  -webkit-transform-origin: -280px 17.5px;
   transform-origin: -280px 17.5px;
 }
 .pluto-track {
@@ -158,8 +174,15 @@ div[class*=track] {
   left: 27.5px;
   top: 27.5px;
 }
+@-webkit-keyframes rotation {
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
 @keyframes rotation {
   to {
+    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
