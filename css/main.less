@@ -403,4 +403,30 @@ a:visited {
 }
 
 // footer start
-.footer-container {}
+.footer-container {
+  height: 4 * @base-size;
+  background-color: @bg-color;
+  width: 100%;
+
+  .copy-right {
+    width: @max-width;
+    height: 100%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    a {
+      &:hover {
+        cursor: pointer;
+        color: @hover-link-color;
+      }
+    }
+  }
+}

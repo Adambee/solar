@@ -323,3 +323,26 @@ a:visited {
   font-size: 21px;
   padding-bottom: 15px;
 }
+.footer-container {
+  height: 64px;
+  background-color: rgba(0, 64, 120, 0.8);
+  width: 100%;
+}
+.footer-container .copy-right {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.footer-container .copy-right a:hover {
+  cursor: pointer;
+  color: #bcbcbc;
+}
