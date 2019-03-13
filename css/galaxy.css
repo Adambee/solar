@@ -1,0 +1,165 @@
+body {
+  background: black;
+}
+.galaxy {
+  width: 650px;
+  height: 650px;
+  position: relative;
+}
+.galaxy div {
+  position: absolute;
+}
+div[class*=track] {
+  border: 1px solid #555;
+  margin-left: -1.5px;
+  margin-top: -1.5px;
+}
+.sun {
+  background: url(http://images2015.cnblogs.com/blog/818663/201510/818663-20151013205656257-1729257972.png) 0 0 no-repeat;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  left: 300px;
+  top: 300px;
+}
+.mercury {
+  background: url(http://images2015.cnblogs.com/blog/818663/201510/818663-20151013205828679-1300811025.png) 0 0 no-repeat;
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+  left: 350px;
+  top: 312.5px;
+  transform-origin: -25px 12.5px;
+  animation: rotation 2.4s linear infinite;
+}
+.mercury-track {
+  width: 75px;
+  height: 75px;
+  left: 287.5px;
+  top: 287.5px;
+  border-radius: 37.5px;
+}
+.venus {
+  background: url(http://images2015.cnblogs.com/blog/818663/201510/818663-20151013205908382-878096313.png) 0 0 no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  left: 375px;
+  top: 310px;
+  animation: rotation 6.16s linear infinite;
+  transform-origin: -50px 15px;
+}
+.venus-track {
+  width: 130px;
+  height: 130px;
+  left: 260px;
+  top: 260px;
+  border-radius: 65px;
+}
+.earth {
+  background: url(http://images2015.cnblogs.com/blog/818663/201510/818663-20151013205943538-1279197333.png) 0 0 no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  top: 310px;
+  left: 402.5px;
+  animation: rotation 10s linear infinite;
+  transform-origin: -77.5px 15px;
+}
+.earth-track {
+  width: 185px;
+  height: 185px;
+  border-radius: 92.5px;
+  left: 232.5px;
+  top: 232.5px;
+}
+.mars {
+  background: url(http://images2015.cnblogs.com/blog/818663/201510/818663-20151013210013101-347441696.png) 0 0 no-repeat;
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+  top: 312.5px;
+  left: 432.5px;
+  animation: rotation 19s linear infinite;
+  transform-origin: -107.5px 12.5px;
+}
+.mars-track {
+  width: 240px;
+  height: 240px;
+  border-radius: 120px;
+  left: 205px;
+  top: 205px;
+}
+.jupiter {
+  background: url(http://images2015.cnblogs.com/blog/818663/201510/818663-20151013210021944-1129782361.png) 0 0 no-repeat;
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+  top: 305px;
+  left: 460px;
+  animation: rotation 118s linear infinite;
+  transform-origin: -135px 20px;
+}
+.jupiter-track {
+  border-radius: 155px;
+  width: 310px;
+  height: 310px;
+  left: 170px;
+  top: 170px;
+}
+.saturn {
+  background: url(http://images2015.cnblogs.com/blog/818663/201510/818663-20151013210041710-1584827250.png) 0 0 no-repeat;
+  background-size: contain;
+  width: 60px;
+  height: 40px;
+  top: 305px;
+  left: 500px;
+  animation: rotation 295s linear infinite;
+  transform-origin: -175px 20px;
+}
+.saturn-track {
+  border-radius: 205px;
+  width: 410px;
+  height: 410px;
+  left: 120px;
+  top: 120px;
+}
+.uranus {
+  background: url(http://images2015.cnblogs.com/blog/818663/201510/818663-20151013210048304-974518986.png) 0 0 no-repeat;
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+  top: 305px;
+  left: 560px;
+  animation: rotation 840s linear infinite;
+  transform-origin: -235px 20px;
+}
+.uranus-track {
+  border-radius: 255px;
+  width: 510px;
+  height: 510px;
+  top: 70px;
+  left: 70px;
+}
+.pluto {
+  background: url(http://images2015.cnblogs.com/blog/818663/201510/818663-20151013210116038-1431613611.png) 0 0 no-repeat;
+  background-size: contain;
+  width: 35px;
+  height: 35px;
+  top: 307.5px;
+  left: 605px;
+  animation: rotation 1648s linear infinite;
+  transform-origin: -280px 17.5px;
+}
+.pluto-track {
+  border-radius: 297.5px;
+  width: 595px;
+  height: 595px;
+  left: 27.5px;
+  top: 27.5px;
+}
+@keyframes rotation {
+  to {
+    transform: rotate(360deg);
+  }
+}
